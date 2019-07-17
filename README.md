@@ -28,6 +28,15 @@ Quando se faz o download do kafka ele ja vem com o zookeeper juntos, portanto na
 2. `$ bin/kafka-console-producer.sh --broker-list localhost:9092 --topic Kafka_Example`
 3. Digitar a mensagem a ser enviada
 
+### 6 - Criar um novo Topic para o JSON
+1. Entrar na pasta do kafka_2.12-2.2.0 e executar o comando:
+2. `$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Kafka_Example_json  `
+
+### 5 - Criar um Producer no localhost:9092 para o JSON
+1. Entrar na pasta do kafka_2.12-2.2.0 e executar o comando:
+2. `$ bin/kafka-console-producer.sh --broker-list localhost:9092 --topic Kafka_Example_json  `
+3. Digitar a mensagem a ser enviada
+
 
 
 
